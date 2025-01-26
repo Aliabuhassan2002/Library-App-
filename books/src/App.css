@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: 'Arial',
+    sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.book-card {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  padding: 20px;
+  text-align: center;
+}
+
+.book-header {
+  margin-bottom: 16px;
+}
+
+.book-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.book-author {
+  font-size: 14px;
+  margin: 4px 0 16px;
+  font-style: italic;
+}
+
+.book-body {
+  margin-bottom: 20px;
+}
+
+.book-description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.book-footer {
+  margin-top: 10px;
+}
+
+.details-btn {
+  background-color: #fff;
+  color: #2575fc;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.details-btn:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+.details-btn:active {
+  background-color: #e0e0e0;
+  transform: scale(0.98);
+}
